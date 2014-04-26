@@ -8,8 +8,8 @@ README.md:                  this file
 
 tidyData.R:                 the R script for executing the five steps required by the Peer Assessments.
 
-                            the file must be copied into a folder having as subfolders the test and train folders with the sampled data 
+              the file must be copied into a folder having as subfolders the test and train folders with the sampled data 
 
-                            the script in the folder must be executed in the above folder
+              the script in the file must be executed in the above folder
 
-                            the script is executed from R prompt via the command     source("tidyData.R")
+              the script is executed from R prompt via the command     source("tidyData.R")
