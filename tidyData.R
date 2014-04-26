@@ -30,7 +30,7 @@ colnames(meanstdDS)<-columnsName # apply  the column names to the new data set
 
 # 3)    Uses descriptive activity names to name the activities in the data set
 
-print("3.0 Uses descriptive activity names to name the activities in the data set") 
+print("3.0 Use descriptive activity names to name the activities in the data set") 
 activity<-read.csv("activity_labels.txt",header=FALSE,sep=" ") # read the activity file, first column is the number, second column is the label
 testa<-file.path("test","y_test.txt")
 traininga<-file.path("train","y_train.txt")                    # read the test activities
