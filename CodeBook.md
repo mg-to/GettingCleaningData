@@ -48,17 +48,26 @@ test/
 
 ### 1) Merge the training and the test sets to create one data set 
 Training and test data set are kept in the files train/X_train.txt and test/X_test.txt. The two datasets have the same columns and therefore the merging operation is executed simply by loading the two files into two data tables and by appending one to the other. 
+
 1) The two files are loaded into trainingfDS and testfDS data sets
+
 2) TrainingfDS and testfDS data sets are appended by rows into wholeDS data set
+
 3) No filtering or modification is performed on the data set variables
+
 4) wholeDS data set has 10299 rows and 561 columns
  
 ### 2) Extract only the measurements on the mean and standard deviation for each measurement 
 It is required to select only the data related to mean and standard deviation of the sampled data. 
+
 1) The name and position of all the columns of the files train/X_train.txt and test/X_test.txt are loaded from file features.txt
+
 2) The number of all the columns whose name matches "*mean()*" or "*std()*" are identified and saved in a vector
+
 3) A new dataset called meanstdDS is created by filtering the wholeDS data set by the vector with useful columns number
+
 4) meanstdDS inherits the labels related to the selected columns from wholeDS 
+
 5) meanstdDS data set has 10299 rows and 66 columns
 
 ### 3) Use descriptive activity names to name the activities in the data set
