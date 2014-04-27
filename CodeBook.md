@@ -56,6 +56,8 @@ Training and test data set are kept in the files train/X_train.txt and test/X_te
 3) No filtering or modification is performed on the data set variables
 
 4) wholeDS data set has 10299 rows and 561 columns
+
+#### The creation of wholeDS data set is the action required by point 1
  
 ### 2) Extract only the measurements on the mean and standard deviation for each measurement 
 It is required to select only the data related to mean and standard deviation of the sampled data. 
@@ -70,6 +72,8 @@ It is required to select only the data related to mean and standard deviation of
 
 5) meanstdDS data set has 10299 rows and 66 columns
 
+#### The creation of meanstdDS data set is the action required by point 2
+
 ### 3) Use descriptive activity names to name the activities in the data set
 The description of the activies is kept in the file 'activity_labels.txt', linking the class numeric labels with their activity name. The files 'train/y_train.txt' and 'test/y_test.txt' keep the Training and Test labels associated to the test results. These files have a single column, with the class numeric label.
 
@@ -78,6 +82,8 @@ The description of the activies is kept in the file 'activity_labels.txt', linki
 2) The files 'train/y_train.txt' and 'test/y_test.txt' are loade into two memory data sets, named testaDS and trainingaDS
 
 3) The testaDS and trainingaDS data sets are modified by replacing the class numeric label with the corresponding activity name
+
+#### The update of testaDS and trainingaDS data sets is the action required by point 3
 
 ### 4) Appropriately label the data set with descriptive activity names.
 It is required to merge:
@@ -116,6 +122,8 @@ LAYING
 
 3) the 66 columns inherited from meanstdDS
 
+#### The creation of wholemeanstdDS data set is the action required by point 4
+
 ### 5) Create a second, independent tidy data set with the average of each variable for each activity and each subject
 It is required to create a new data set with
 
@@ -143,8 +151,9 @@ The operation is performed in two steps:
 
 2) wholemeanstdmoldenDS data set is cast into activitysubjectmeansDS data set, that is the required tidy data set with 180 rows and 68 variables
 
-The activitysubjectmeansDS is written into activitysubjectmeansDS.csv, a space separated ascii file. This file is submitted to Coursera
+The activitysubjectmeansDS data set is written into activitysubjectmeansDS.csv, a space separated ascii file. This file is submitted to Coursera
 
+#### The creation of activitysubjectmeansDS data set is the action required by point 2
 
 
 
